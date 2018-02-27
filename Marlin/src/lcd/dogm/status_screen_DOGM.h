@@ -249,6 +249,7 @@ static void lcd_implementation_status_screen() {
   #endif // SDSUPPORT
 
   #if ENABLED(SDSUPPORT) || ENABLED(LCD_SET_PROGRESS_MANUALLY)
+    #include "../../libs/duration_t.h"
     //
     // Progress bar frame
     //
