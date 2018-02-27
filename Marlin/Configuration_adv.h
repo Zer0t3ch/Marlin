@@ -430,7 +430,8 @@
 #define MINIMUM_PLANNER_SPEED 0.05 // (mm/sec)
 
 // Microstep setting (Only functional when stepper driver microstep pins are connected to MCU.
-#define MICROSTEP_MODES {16,16,16,16,16} // [1,2,4,8,16]
+//#define MICROSTEP_MODES {16,16,16,16,16} // [1,2,4,8,16]
+#define MICROSTEP_MODES {1,1,1,1,1} // [1,2,4,8,16]
 
 /**
  *  @section  stepper motor current
@@ -512,7 +513,7 @@
   // Show a progress bar on HD44780 LCDs for SD printing
   #if ENABLED(ZONESTAR_LCD)
     #define LCD_PROGRESS_BAR
-   #endif
+  #endif
   #if ENABLED(LCD_PROGRESS_BAR)
     // Amount of time (ms) to show the bar
     #define PROGRESS_BAR_BAR_TIME 5000
