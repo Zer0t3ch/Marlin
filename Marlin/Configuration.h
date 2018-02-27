@@ -574,7 +574,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 95 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 100 }	// All full steps (no micro-stepping)
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -801,8 +801,8 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR true
 #define INVERT_Z_DIR true
 
 // Enable this option for Toshiba stepper drivers
@@ -823,7 +823,7 @@
 
 //#define UNKNOWN_Z_NO_RAISE // Don't raise Z (lower the bed) if Z is "unknown." For beds that fall when Z is powered off.
 
-//#define Z_HOMING_HEIGHT 4  // (in mm) Minimal z height before homing (G28) for Z clearance above the bed, clamps, ...
+#define Z_HOMING_HEIGHT 4  // (in mm) Minimal z height before homing (G28) for Z clearance above the bed, clamps, ...
                              // Be sure you have this distance over your Z_MAX_POS in case.
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
