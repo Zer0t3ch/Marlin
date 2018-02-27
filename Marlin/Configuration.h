@@ -1394,7 +1394,7 @@
  * you must uncomment the following option or it won't work.
  *
  */
-//#define SDSUPPORT // (MODIFIED)
+#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
