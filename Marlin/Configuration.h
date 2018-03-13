@@ -1011,7 +1011,7 @@
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
   #define MESH_INSET 50              // Mesh inset margin on print area
-  #define GRID_MAX_POINTS_X 5        // Don't use more than 15 points per axis, implementation limited.
+  #define GRID_MAX_POINTS_X 4        // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   //#define UBL_PROBE_PT_1_X 39       // Probing points for 3-Point leveling of the mesh
