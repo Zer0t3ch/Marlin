@@ -1,6 +1,6 @@
 // vim: ts=2 sts=2 et nowrap
 
-#define _BOOTLOGO LOGO_YINYANG
+#define _BOOTLOGO LOGO_INVADER
 
 #define LOGO_INVADER 1
 #define LOGO_YINYANG 2
