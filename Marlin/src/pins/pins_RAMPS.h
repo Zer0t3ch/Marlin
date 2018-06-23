@@ -269,6 +269,8 @@
   #endif
 #endif
 
+#undef FAN_PIN
+#define FAN_PIN           4   // Override
 #ifndef FAN_PIN
   #define FAN_PIN           4   // IO pin. Buffer needed
 #endif
