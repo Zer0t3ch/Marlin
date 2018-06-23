@@ -263,8 +263,6 @@
   #endif
 #endif
 
-#undef FAN_PIN
-#define FAN_PIN           4   // Override
 #ifndef FAN_PIN
   #if ENABLED(IS_RAMPS_EFB) || ENABLED(IS_RAMPS_EFF)  // Hotend, Fan, Bed or Hotend, Fan, Fan
     #define FAN_PIN        RAMPS_D9_PIN
